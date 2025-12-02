@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "@nestjs/common": "^10.0.0",
-    "@nestjs/config": "^3.3.0"
+    "@nestjs/config": "^3.3.0",
+    "@novu/api": "^3.11.0"
   },
   "devDependencies": {
     "typescript": "^5.1.3"

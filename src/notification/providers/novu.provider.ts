@@ -106,15 +106,17 @@ export class NovuProvider implements NotificationProvider {
     subscriberId: string,
     dto: UpdateSubscriberDto,
   ): Promise<SubscriberResult> {
-    const result = await this.novu.subscribers.update(subscriberId, dto as any);
+    // Cast sang any để làm việc với SDK trong khi typings có thể chưa đầy đủ
+    const client: any = this.novu as any;
+    const result = await client.subscribers.update(subscriberId, dto as any);
     return this.mapSubscriberResult((result as any).data ?? result);
   }
 
   async getSubscriberPreferences(
     subscriberId: string,
   ): Promise<SubscriberPreferences> {
-    const result =
-      await this.novu.subscribers.preferences.get(subscriberId);
+    const client: any = this.novu as any;
+    const result = await client.subscribers.preferences.get(subscriberId);
     return ((result as any).data ?? result) as SubscriberPreferences;
   }
 
@@ -122,7 +124,8 @@ export class NovuProvider implements NotificationProvider {
     subscriberId: string,
     preferences: SubscriberPreferences,
   ): Promise<SubscriberPreferences> {
-    const result = await this.novu.subscribers.preferences.update(
+    const client: any = this.novu as any;
+    const result = await client.subscribers.preferences.update(
       subscriberId,
       preferences as any,
     );
