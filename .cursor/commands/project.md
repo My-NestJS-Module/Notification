@@ -1,0 +1,1 @@
+tôi muốn tạo một module để có thể sử dụng trong nhiều dựa án backend nestjs cần dùng tới tính năng thông báo, module phải được thiết kế sao cho chúng có thể hoạt động chung với backend bất kể business logic như thế nào. Hiện tại chưa cần tách hẳn thành một microservice mà chỉ cần làm module thôi, rồi sau đó tôi sẽ copy thư mục module này vào các dự án backend nestjs khác nhau.

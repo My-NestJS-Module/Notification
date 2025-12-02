@@ -1,0 +1,22 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "task-phase-3-governance-versioning",
+        "description": "Update docs for Phase 3 governance & versioning including workflow lifecycle rules, package split proposal, and architecture updates per user request.",
+        "details": "Implement documentation updates covering governance roles, review process, versioning strategy, package split proposal, and architecture changes for Notification module.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-02T09:49:53.776Z",
+      "description": "Default tasks context",
+      "updated": "2025-12-02T09:49:53.776Z"
+    }
+  }
+}
